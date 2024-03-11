@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   split-branch:
-    uses: peckadesign/.github/.github/workflows/split_monorepo.yaml@master
+    uses: AloisJasa/.github/.github/workflows/split_monorepo_git-filter.yaml@main
     name: Split branch
     strategy:
       fail-fast: false
