@@ -1,0 +1,14 @@
+{
+    "name": "aloisjasa/monorepo-split-playground",
+    "authors": [
+        {
+            "name": "aloisjasa",
+            "email": "alois.jasa@peckadesign.cz"
+        }
+    ],
+    "require": {
+        "php": ">= 8.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

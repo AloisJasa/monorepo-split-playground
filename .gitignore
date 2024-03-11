@@ -1,0 +1,8 @@
+/.*
+!/.gitignore
+!/.gitmodules
+!/.github
+/vendor
+/composer.phar
+.env
+/temp
