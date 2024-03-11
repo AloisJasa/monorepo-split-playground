@@ -1,0 +1,32 @@
+{
+    "name": "aloisjasa/monorepo-split-playground-sub1",
+    "description": "Admin",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "AloisJasa\\MonorepoSplitPlaygroundSub1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aloisjasa",
+            "email": "aloisjasa@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/AloisJasa/monorepo-split-playground-sub2"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "aloisjasa/monorepo-split-playground-sub2": "^0.1"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}

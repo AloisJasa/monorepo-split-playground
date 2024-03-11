@@ -11,8 +11,8 @@ services:
       - ./config/docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini:delegated
       - ~/.composer/docker-cache:/root/.composer/cache:cached
     environment:
-        VIRTUAL_HOST: mr-test.test
-        PHP_IDE_CONFIG: serverName=mr-test.test
+        VIRTUAL_HOST: monorepo-playground.test
+        PHP_IDE_CONFIG: serverName=monorepo-playground.test
         COMPOSER_AUTH: '{"github-oauth": {"github.com": "$GITHUB_AUTH_TOKEN"}}'
         XDEBUG_CONFIG: client_host=docker.for.mac.localhost
 

@@ -1,0 +1,23 @@
+{
+    "name": "aloisjasa/monorepo-split-playground-sub2",
+    "description": "SDK",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "AloisJasa\\MonorepoSplitPlaygroundSub2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aloisjasa",
+            "email": "aloisjasa@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}

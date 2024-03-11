@@ -1,0 +1,19 @@
+name: Publish release v2
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.0'
+
+concurrency:
+  group: release-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    uses: AloisJasa/.github/.github/workflows/release_drafter_on_call.yml@main
+    name: Vytvoření nového releasu
+    with:
+      tag: ${{ github.ref_name }}
+    secrets:
+      gh-token: ${{ secrets.ACCESS_TOKEN }}
