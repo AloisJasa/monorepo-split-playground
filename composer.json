@@ -31,8 +31,8 @@
         }
     ],
     "replace": {
-        "aloisjasa/monorepo-split-playground-sub1": "0.4.0",
-        "aloisjasa/monorepo-split-playground-sub2": "0.4.0"
+        "aloisjasa/monorepo-split-playground-sub1": "1.0.0",
+        "aloisjasa/monorepo-split-playground-sub2": "1.0.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
