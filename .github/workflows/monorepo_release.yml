@@ -1,5 +1,5 @@
 name: Monorepo release
-
+run-name: Monorepo release ${{ inputs.version }}
 on:
   workflow_dispatch:
     inputs:
