@@ -34,6 +34,6 @@ jobs:
       package: ${{ matrix.package }}
       organization: "aloisjasa"
       force: ${{ inputs.force == 'true' }}
-      push-tags: true
+      push-tags:  ${{ github.ref != 'refs/heads/main' }}
     secrets:
       gh-token: ${{ secrets.ACCESS_TOKEN }}
