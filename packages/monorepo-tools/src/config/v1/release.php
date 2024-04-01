@@ -6,6 +6,7 @@ return static function (MBConfig $containerConfigurator): void {
 	$containerConfigurator->workers([
 		// 0. validation
 		\AloisJasa\MonorepoTools\Worker\Release\VersionValidationWorker::class,
+		\AloisJasa\MonorepoTools\Worker\Release\CheckoutDefaultBranchWorker::class,
 		\AloisJasa\MonorepoTools\Worker\Release\AssertTagDoestNotExistsYetWorker::class,
 
 		// 1.create branch
