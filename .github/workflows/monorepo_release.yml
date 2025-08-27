@@ -15,9 +15,15 @@ on:
 
 jobs:
   releasecall:
-    uses: AloisJasa/.github/.github/workflows/monorepo_release.yml@main
-    name: Monorepo release
-    with:
-      version: ${{ inputs.version }}
-    secrets:
-      gh-token: ${{ secrets.ACCESS_TOKEN }}
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    name: Release
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: release
+        uses: AloisJasa/.github/.github/workflows/p7-monorepo-release@main
+        with:
+          version: ${{ inputs.version }}
+          gh-token: ${{ secrets.ACCESS_TOKEN }}
+          dry-run: 'true'

@@ -13,10 +13,15 @@ env:
   DRC: ${{ vars.PROJECT }}
 jobs:
   release:
-    uses: AloisJasa/.github/.github/workflows/release_drafter_on_call.yml@main
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
     name: Vytvoření nového releasu
-    with:
-      tag: ${{ github.ref_name }}
-      publish: true
-    secrets:
-      gh-token: ${{ secrets.ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: release
+        uses: AloisJasa/.github/.github/workflows/p7-release-drafter@main
+        with:
+          tag: ${{ github.ref_name }}
+          publish: true
+          gh-token: ${{ secrets.ACCESS_TOKEN }}
