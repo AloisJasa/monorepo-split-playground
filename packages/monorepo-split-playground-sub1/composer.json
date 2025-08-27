@@ -22,11 +22,11 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "aloisjasa/monorepo-split-playground-sub2": "^4.2"
+        "aloisjasa/monorepo-split-playground-sub2": "^5.0"
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "4.2-dev"
+            "dev-main": "5.0-dev"
         }
     }
 }
