@@ -22,7 +22,7 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "aloisjasa/monorepo-split-playground-sub2": "^5.0"
+        "aloisjasa/monorepo-split-playground-sub2": "^5.0.1"
     },
     "extra": {
         "branch-alias": {
