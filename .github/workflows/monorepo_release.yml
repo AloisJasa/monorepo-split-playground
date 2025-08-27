@@ -21,6 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          repository: AloisJasa/monorepo-split-playground
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - uses: AloisJasa/.github/.github/actions/p7-monorepo-release@main
