@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: AloisJasa/.github/.github/workflows/p7-monorepo-release@main
+      - uses: AloisJasa/.github/.github/actions/p7-monorepo-release@main
         with:
           version: ${{ inputs.version }}
           gh-token: ${{ secrets.ACCESS_TOKEN }}
