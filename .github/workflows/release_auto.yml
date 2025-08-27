@@ -11,6 +11,7 @@ concurrency:
 
 env:
   DRC: ${{ vars.PROJECT }}
+
 jobs:
   release:
     timeout-minutes: 10
@@ -19,8 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: release
-        uses: AloisJasa/.github/.github/workflows/p7-release-drafter@main
+      - uses: AloisJasa/.github/.github/workflows/p7-release-drafter@main
         with:
           tag: ${{ github.ref_name }}
           publish: true
