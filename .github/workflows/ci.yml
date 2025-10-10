@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  composer-validate:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    name: labeler
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate
+        uses: AloisJasa/.github/.github/actions/composer-validate@main
+        with:
+          gh-token: ${{ secrets.ACCESS_TOKEN }}
+
